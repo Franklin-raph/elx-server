@@ -16,7 +16,7 @@ app.use("/api/v1/", require("./routes/studentRoutes"));
 app.use("/api/v1/", require("./routes/adminRoutes"));
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.send("Home route");
 });
 
 app.listen(PORT, () => {
