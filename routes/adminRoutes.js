@@ -4,15 +4,15 @@ const {
   registerCourse,
   getAllCourses,
   getASingleCourse,
-  registerCourseCarousel,
-  getAllCoursesCarousel,
+  registerAdminPass,
+  loginAdmin,
+  adminLogout,
 } = require("../controllers/adminController");
 
 router.post("/registerCourse", registerCourse);
 router.get("/courses", getAllCourses);
 router.get("/course/:courseId", getASingleCourse);
-
-router.post("/registerCourseCarousel", registerCourseCarousel);
-router.get("/CourseCarousel", getAllCoursesCarousel);
-
+router.post("/registerAdminPassword", registerAdminPass);
+router.post("/loginAdmin", loginAdmin);
+router.get("/adminLogout", adminLogout);
 module.exports = router;
